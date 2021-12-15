@@ -1,8 +1,8 @@
-# random function to generate random numbers
 import random
-# initialising the present employee value
+'''Using Random Function to generate a Random Number
+   initialising the present value as 1
+   and comparing it with the randomly generated value'''
 present_employee=1
-# generating the random number
 a=random.randint(0,1)
 if(a==1):
     print("Employee is Present")
