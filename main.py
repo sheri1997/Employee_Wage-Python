@@ -5,13 +5,18 @@ import random
    and comparing it with the randomly generated value'''
 # present_employee = 1
 part_time_employee = 1
+full_time_employee = 2
 wage_per_hour = 20
 hours = 0
 wage = 0
-a = random.randint(0, 1)
-if (a == 1):
-    hours = 8
-else:
-    hours = 0
-wage = hours*wage_per_hour
-print("Wage of the Part Time Employee = ", wage)
+monthly_wage = 0
+for day in range(1,21):
+    a = random.randint(0, 1)
+    if a == 1:
+        hours = 8
+    else:
+        hours = 16
+    wage = hours*wage_per_hour
+    monthly_wage = monthly_wage + wage
+print("Monthly Wage of the Employee = ", monthly_wage)
+
