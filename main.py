@@ -5,12 +5,18 @@ import random
 
 
 class EmployeeWage:
-    def __init__(self,company,wage_per_hour,working_days,hours_in_a_month):
+    # here we are using instead of function parameters
+    part_time_employee = 1
+    full_time_employee = 2
+    company = ""
+    wage_per_hour = 0
+    working_days = 0
+    hours_in_a_month = 0
+
+    def __init__(self, company, wage_per_hour,working_days, hours_in_a_month):
         """Using Random Function to generate a Random Number
             initialising the values of different variables
             and comparing it with the randomly generated value"""
-        # part_time_employee = 1
-        # full_time_employee = 2
         hours = 0
         # wage = 0
         # monthly_wage = 0
@@ -28,14 +34,14 @@ class EmployeeWage:
             else:
                 hours = 16
             total_employee_hours = total_employee_hours + hours
-            print("Days Worked :",total_working_days,"Employee Hours :",hours)
+            print("Days Worked :", total_working_days, "Employee Hours :", hours)
         total_wage = total_employee_hours * wage_per_hour
-        print("Total Wage of the Employee is :", total_wage)
+        print("Total Wage of the Employee is :", total_wage,"For the Company",company)
 
 
 '''here the class is being called
     passing the parameter for 
     reliance and dmart company'''
 
-EmployeeWage("Dmart",20,2,10)
-EmployeeWage("Reliance",10,4,20)
+EmployeeWage("Dmart", 20, 2, 10)
+EmployeeWage("Reliance", 10, 4, 20)
