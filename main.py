@@ -3,7 +3,8 @@ import random
 '''Using Random Function to generate a Random Number
    initialising the present value as 1
    and comparing it with the randomly generated value'''
-present_employee = 1
+# present_employee = 1
+part_time_employee = 1
 wage_per_hour = 20
 hours = 0
 wage = 0
@@ -13,4 +14,4 @@ if (a == 1):
 else:
     hours = 0
 wage = hours*wage_per_hour
-print("Wage of the Employee = ", wage)
+print("Wage of the Part Time Employee = ", wage)
