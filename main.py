@@ -5,19 +5,16 @@ import random
 
 
 class EmployeeWage:
-    def __init__(self):
+    def __init__(self,company,wage_per_hour,working_days,hours_in_a_month):
         """Using Random Function to generate a Random Number
             initialising the values of different variables
             and comparing it with the randomly generated value"""
-        part_time_employee = 1
-        full_time_employee = 2
-        wage_per_hour = 20
+        # part_time_employee = 1
+        # full_time_employee = 2
         hours = 0
-        wage = 0
-        monthly_wage = 0
-        working_days = 2
+        # wage = 0
+        # monthly_wage = 0
         total_working_days = 0
-        hours_in_a_month = 100
         total_employee_hours = 0
         '''loop will check if the total employee hours is less 
             or equal to the total working hours in a month and 
@@ -31,10 +28,14 @@ class EmployeeWage:
             else:
                 hours = 16
             total_employee_hours = total_employee_hours + hours
+            print("Days Worked :",total_working_days,"Employee Hours :",hours)
         total_wage = total_employee_hours * wage_per_hour
         print("Total Wage of the Employee is :", total_wage)
 
 
-# here the class is being called
+'''here the class is being called
+    passing the parameter for 
+    reliance and dmart company'''
 
-EmployeeWage()
+EmployeeWage("Dmart",20,2,10)
+EmployeeWage("Reliance",10,4,20)
